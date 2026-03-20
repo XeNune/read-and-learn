@@ -1,0 +1,50 @@
+{
+  "text1.txt": [
+    {
+      "english": "The old oak tree stood in the center of the village square, its massive branches extending over the cobblestone paths.",
+      "russian": "Старый дубовый ствол стоял в центре деревенской площади, его огромные ветви простирались над булыжными дорожками."
+    },
+    {
+      "english": "Children played beneath its protective canopy while elderly residents sat on weathered benches, sharing stories of decades past.",
+      "russian": "Дети играли под его защитным пологом, в то время как пожилые жители сидели на потёртых скамейках, делясь историями прошедших десятилетий."
+    },
+    {
+      "english": "The tree had witnessed countless seasons, seasons of celebration and sorrow, growth and loss.",
+      "russian": "Дерево было свидетелем бесчисленных сезонов, сезонов празднования и печали, роста и потери."
+    },
+    {
+      "english": "Its gnarled trunk bore the marks of time, deep grooves carved by wind and rain, small plaques hammered by devoted hands.",
+      "russian": "Его узловатый ствол нёс отметки времени, глубокие борозды, вырезанные ветром и дождём, маленькие таблички, забитые преданными руками."
+    },
+    {
+      "english": "Every generation found something different in its shade, yet all agreed it was a sacred place, a gathering point where community bonds strengthened with each passing year.",
+      "russian": "Каждое поколение находило в его тени что-то своё, но все согласились, что это было священное место, место сбора, где узы сообщества крепли с каждым проходящим годом."
+    }
+  ],
+  "text2.txt": [
+    {
+      "english": "The ancient library held thousands of volumes, their leather spines faded to soft hues of brown and gold.",
+      "russian": "Древняя библиотека хранила тысячи томов, их кожаные корешки выцветшие в мягкие оттенки коричневого и золота."
+    },
+    {
+      "english": "Dust motes danced in the afternoon sunlight streaming through tall arched windows.",
+      "russian": "Пылинки танцевали в обеденном солнечном свете, текущем сквозь высокие арочные окна."
+    },
+    {
+      "english": "A young scholar walked slowly between the towering shelves, fingers trailing along book edges, searching for knowledge long forgotten by the world.",
+      "russian": "Молодой учёный медленно шёл между возвышающимися полками, пальцами скользя вдоль краёв книг, ища знания давно забытые миром."
+    },
+    {
+      "english": "The musty smell of aged paper and binding glue filled the air, a scent that spoke of history and wisdom.",
+      "russian": "Затхлый запах старой бумаги и переплётного клея наполнял воздух, аромат, который говорил об истории и мудрости."
+    },
+    {
+      "english": "Each book was a portal to another time, another mind, another world entirely.",
+      "russian": "Каждая книга была порталом в другое время, другой ум, совершенно другой мир."
+    },
+    {
+      "english": "The librarian, an elderly woman with silver hair, watched from her desk, knowing that today another seeker had found their way home.",
+      "russian": "Библиотекарь, пожилая женщина с серебристыми волосами, смотрела со своего стола, зная, что сегодня ещё один ищущий нашёл свой путь домой."
+    }
+  ]
+}
