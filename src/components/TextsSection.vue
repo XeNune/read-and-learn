@@ -138,6 +138,8 @@
 <script setup>
 import { ref, computed, nextTick } from 'vue'
 
+const BASE_URL = import.meta.env.BASE_URL
+
 const props = defineProps({
   texts: {
     type: Array,
@@ -148,6 +150,7 @@ const props = defineProps({
     default: () => ({})
   }
 })
+
 
 defineEmits(['back'])
 
@@ -174,17 +177,17 @@ const paragraphs = computed(() => {
 
 const readText = async (text) => {
   try {
-    const response = await fetch(`/texts/${text.file}`)
+    const response = await fetch(`${BASE_URL}texts/${text.file}`)
     const content = await response.text()
     textContent.value = content
     currentReading.value = text
     
     // Load grammar rules
-    const grammarRes = await fetch('/data/grammar.json')
+    const grammarRes = await fetch(`${BASE_URL}data/grammar.json`)
     grammarRules.value = await grammarRes.json()
     
     // Load sentence translations
-    const sentenceRes = await fetch('/data/sentence-translations.json')
+    const sentenceRes = await fetch(`${BASE_URL}data/sentence-translations.json`)
     sentenceTranslations.value = await sentenceRes.json()
   } catch (error) {
     console.error('Error loading text:', error)
@@ -308,7 +311,7 @@ const prepareFullTranslation = async () => {
     try {
       // Load translation from file: text1.txt → text1.translated.txt
       const translationFileName = currentReading.value.file.replace('.txt', '.translated.txt')
-      const response = await fetch(`/texts/${translationFileName}`)
+      const response = await fetch(`${BASE_URL}texts/${translationFileName}`)
       if (response.ok) {
         const translation = await response.text()
         fullTranslation.value = translation

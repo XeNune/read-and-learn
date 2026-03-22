@@ -2,13 +2,17 @@
 import { ref, onMounted } from 'vue'
 import TextsSection from './components/TextsSection.vue'
 
+// 🔑 базовый путь (учитывает /read-and-learn/)
+const BASE_URL = import.meta.env.BASE_URL
+
 const currentSection = ref('home')
 const texts = ref([])
 const translations = ref({})
 
 onMounted(async () => {
   try {
-    const csvResponse = await fetch('/texts/texts.csv')
+    // ✅ исправлено
+    const csvResponse = await fetch(`${BASE_URL}texts/texts.csv`)
     const csvText = await csvResponse.text()
     const lines = csvText.trim().split('\n').slice(1)
     
@@ -21,7 +25,8 @@ onMounted(async () => {
   }
   
   try {
-    const transResponse = await fetch('/data/translations.json')
+    // ✅ исправлено
+    const transResponse = await fetch(`${BASE_URL}data/translations.json`)
     translations.value = await transResponse.json()
   } catch (e) {
     console.error('Error loading translations:', e)
